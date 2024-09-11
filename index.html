@@ -9,7 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
+            background: url('path/to/your/background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: #333;
         }
         header {
@@ -18,8 +19,8 @@
             text-align: center;
             border-bottom: 1px solid #ddd;
         }
-        header h1 {
-            margin: 0;
+        header img {
+            max-width: 150px;
         }
         nav {
             margin: 20px;
@@ -34,9 +35,6 @@
         section {
             margin: 40px 20px;
             text-align: center;
-        }
-        section h2 {
-            color: #2c3e50;
         }
         .services, .testimonials {
             display: flex;
@@ -62,6 +60,7 @@
 <body>
 
     <header>
+        <img src="path/to/your/logo.png" alt="Clinic Logo">
         <h1>Welcome to Dr. Mujumdar's Clinic</h1>
         <p>Your health is our priority.</p>
     </header>
@@ -100,7 +99,6 @@
     <section id="appointment">
         <h2>Appointment Booking</h2>
         <p>Book an appointment easily by <a href="https://drmujumdarclinic.godaddysites.com/ola/services/online-appointment" target="_blank">clicking here</a>.</p>
-</section>
     </section>
 
     <section id="testimonials">
@@ -123,7 +121,7 @@
 
     <section id="contact">
         <h2>Contact Information</h2>
-        <p>Email: info@drmujumdarclinic.com <br> Phone: +123 456 7890 <br> Address: 123 Health St., City, Country</p>
+        <p>Email: sumedhmujumdar@gmail.com <br> Phone: +123 456 7890 <br> Address: 123 Health St., City, Country</p>
     </section>
 
     <footer>
