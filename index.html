@@ -6,127 +6,130 @@
     <title>Dr. Mujumdar Clinic</title>
     <style>
         body {
-            font-family: Libre Franklin, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('"C:\Users\admin\Videos\2024-09-11 19-38-22.mkv"') no-repeat center center fixed;
-            background-size: cover;
+            background-color: #f9f9f9;
             color: #333;
         }
         header {
-            background-color: #f8f8f8;
+            background-color: #2c3e50;
             padding: 20px;
             text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-        header img {
-            max-width: 150px;
+            color: white;
         }
         nav {
-            margin: 20px;
+            margin: 20px 0;
             text-align: center;
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #333;
+            color: #2c3e50;
             font-weight: bold;
         }
-        section {
-            margin: 40px 20px;
-            text-align: center;
-        }
-        .services, .testimonials {
+        .hero {
+            background: url('path/to/your/banner-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 400px;
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
         }
-        .service-item, .testimonial-item {
-            flex: 1;
-            padding: 15px;
-            margin: 10px;
-            border: 1px solid #ddd;
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about, .services, .testimonials, .contact {
+            margin-bottom: 60px;
+        }
+        .about img, .services img, .testimonials img {
+            max-width: 100%;
             border-radius: 8px;
-            max-width: 30%;
         }
         footer {
-            background-color: #f8f8f8;
-            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
             text-align: center;
-            border-top: 1px solid #ddd;
+            padding: 20px;
+            position: relative;
+        }
+        footer p {
+            margin: 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <img src="path/to/your/logo.png" alt="Clinic Logo">
-        <h1>Welcome to Dr. Mujumdar's Clinic</h1>
-        <p>Your health is our priority.</p>
-    </header>
-
+<header>
+    <h1>Dr. Mujumdar Clinic</h1>
     <nav>
-        <a href="#about">About the Clinic</a>
-        <a href="#services">Services Offered</a>
-        <a href="#appointment">Appointment Booking</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
         <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact Information</a>
+        <a href="#appointment">Appointment</a>
+        <a href="#contact">Contact</a>
     </nav>
+</header>
 
-    <section id="about">
-        <h2>About the Clinic</h2>
-        <p>At Dr. Mujumdar Clinic, we provide expert care and personalized treatments to ensure your well-being.</p>
-    </section>
+<div class="hero">
+    <h1>Your Health, Our Priority</h1>
+</div>
 
-    <section id="services">
-        <h2>Services Offered</h2>
-        <div class="services">
-            <div class="service-item">
-                <h3>General Consultation</h3>
-                <p>Comprehensive check-ups and consultations to address all your health concerns.</p>
-            </div>
-            <div class="service-item">
-                <h3>Pediatrics</h3>
-                <p>Specialized care for infants, children, and adolescents.</p>
-            </div>
-            <div class="service-item">
-                <h3>Online Consultations</h3>
-                <p>Convenient video appointments for remote healthcare advice.</p>
-            </div>
-        </div>
-    </section>
+<section id="about" class="about">
+    <h2>About Dr. Mujumdar</h2>
+    <p>Dr. Mujumdar has been practicing for over 20 years, offering comprehensive healthcare solutions to patients of all ages. His clinic is renowned for personalized care and patient satisfaction.</p>
+    <img src="path/to/your/about-image.jpg" alt="Dr. Mujumdar">
+</section>
 
-    <section id="appointment">
-        <h2>Appointment Booking</h2>
-        <p>Book an appointment easily by <a href="https://drmujumdarclinic.godaddysites.com/ola/services/online-appointment" target="_blank">clicking here</a>.</p>
-    </section>
+<section id="services" class="services">
+    <h2>Services We Offer</h2>
+    <div class="service-item">
+        <h3>General Consultation</h3>
+        <p>Personalized consultations for all your healthcare needs.</p>
+        <img src="path/to/your/service-image1.jpg" alt="Service 1">
+    </div>
+    <div class="service-item">
+        <h3>Pediatrics</h3>
+        <p>Specialized care for infants, children, and adolescents.</p>
+        <img src="path/to/your/service-image2.jpg" alt="Service 2">
+    </div>
+</section>
 
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonials">
-            <div class="testimonial-item">
-                <p>"Dr. Mujumdar is highly professional and always puts the patient's needs first!"</p>
-                <em>- Patient A</em>
-            </div>
-            <div class="testimonial-item">
-                <p>"The clinic's services are excellent. I always feel well cared for."</p>
-                <em>- Patient B</em>
-            </div>
-            <div class="testimonial-item">
-                <p>"A wonderful experience every time I visit. Highly recommend!"</p>
-                <em>- Patient C</em>
-            </div>
-        </div>
-    </section>
+<section id="testimonials" class="testimonials">
+    <h2>What Our Patients Say</h2>
+    <blockquote>"Dr. Mujumdar provides excellent care. The best clinic I’ve visited!" – Patient A</blockquote>
+    <img src="path/to/your/testimonial-image.jpg" alt="Happy Patient">
+</section>
 
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: sumedhmujumdar@gmail.com <br> Phone: +123 456 7890 <br> Address: 123 Health St., City, Country</p>
-    </section>
+<section id="appointment" class="appointment">
+    <h2>Book an Appointment</h2>
+    <a href="YOUR_BOOKING_URL" class="cta-button">Click Here to Book</a>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Dr. Mujumdar Clinic. All rights reserved.</p>
-    </footer>
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@drmujumdarclinic.com | Phone: +123 456 7890</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Dr. Mujumdar Clinic. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
