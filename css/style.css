@@ -80,3 +80,6 @@ section {
     background-size: cover;
     height: 500px;
 }
+body {
+    background: linear-gradient(120deg, #f0f4f8, #d9e9f8);
+}
