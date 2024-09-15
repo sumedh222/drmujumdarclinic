@@ -1,10 +1,9 @@
-// Optional: Add JavaScript for additional interactivity
-document.addEventListener('DOMContentLoaded', function() {
-    const button = document.querySelector('button');
-    button.addEventListener('mouseover', function() {
-        button.style.animation = 'buttonPulse 1s infinite';
-    });
-    button.addEventListener('mouseout', function() {
-        button.style.animation = '';
-    });
+document.getElementById('bookingForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Booking submitted. We will contact you soon.');
+});
+
+document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Subscribed successfully.');
 });
