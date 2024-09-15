@@ -1,98 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="//img1.wsimg.com/isteam/ip/968643ec-1809-4657-821d-84d53e49b112/favicon/68c20d6c-7f64-48a3-ae63-fef6cb6ba42a.png/:/rs=w:16,h:16,m" sizes="16x16"/>
-        <link rel="icon" href="//img1.wsimg.com/isteam/ip/968643ec-1809-4657-821d-84d53e49b112/favicon/68c20d6c-7f64-48a3-ae63-fef6cb6ba42a.png/:/rs=w:24,h:24,m" sizes="24x24"/>
-        <link rel="icon" href="//img1.wsimg.com/isteam/ip/968643ec-1809-4657-821d-84d53e49b112/favicon/68c20d6c-7f64-48a3-ae63-fef6cb6ba42a.png/:/rs=w:32,h:32,m" sizes="32x32"/>
-        <link rel="icon" href="//img1.wsimg.com/isteam/ip/968643ec-1809-4657-821d-84d53e49b112/favicon/68c20d6c-7f64-48a3-ae63-fef6cb6ba42a.png/:/rs=w:48,h:48,m" sizes="48x48"/>
-        <link rel="icon" href="//img1.wsimg.com/isteam/ip/968643ec-1809-4657-821d-84d53e49b112/favicon/68c20d6c-7f64-48a3-ae63-fef6cb6ba42a.png/:/rs=w:64,h:64,m" sizes="64x64"/>
-        <meta charSet="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Mujumdar Clinic</title>
-    <!-- Link to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <div class="header-container">
+        <div class="container">
             <h1>Dr. Mujumdar Clinic</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#booking">Book Appointment</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-        
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <!-- About Us Section with animation -->
-    <section id="about" class="section fade-in">
-        <h2>About Us</h2>
-        <p>Welcome to Dr. Mujumdar Clinic. We provide top-notch healthcare services with a team of experienced professionals.</p>
-    </section>
-
-    <!-- Services Section with animation -->
-    <section id="services" class="section slide-up">
-        <h2>Services</h2>
-        <p>We offer a wide range of services including general check-ups, specialist consultations, and more.</p>
-    </section>
-
-    <!-- Testimonials Section with animation -->
-    <section id="testimonials" class="section fade-in">
-        <h2>Testimonials</h2>
-        <p>Our patients love our personalized care and attention to detail.</p>
-    </section>
-
-    <!-- Gallery Section with animation -->
-    <section id="gallery" class="section slide-up">
-        <h2>Gallery</h2>
-        <div class="gallery-images">
-            <img src="images/gallery1.jpg" alt="Gallery Image 1">
-            <img src="images/gallery2.jpg" alt="Gallery Image 2">
-            <!-- Add more images as needed -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Information about the clinic.</p>
         </div>
     </section>
-
-    <!-- Subscribe Section -->
-    <section id="subscribe" class="section fade-in">
-        <h2>Subscribe to Our Newsletter</h2>
-        <form id="subscribe-form">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
+    <section id="services">
+        <div class="container">
+            <h2>Services Offered</h2>
+            <p>Details of the services provided.</p>
+        </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section slide-up">
-        <h2>Contact Us</h2>
-        <p>Feel free to reach out to us for any inquiries or to book an appointment.</p>
+    <section id="booking">
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
     </section>
-
-    <!-- Footer Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <p>Client testimonials go here.</p>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p>Images of the clinic and staff.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Contact information and form.</p>
+        </div>
+    </section>
+    <section id="subscribe">
+        <div class="container">
+            <h2>Subscribe</h2>
+            <form id="subscribeForm">
+                <label for="emailSubscribe">Email:</label>
+                <input type="email" id="emailSubscribe" name="emailSubscribe" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2024 Dr. Mujumdar Clinic. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Dr. Mujumdar Clinic. All rights reserved.</p>
+        </div>
     </footer>
-
-    <!-- Link to the external JavaScript file -->
-    <script src="script.js"></script>
-     /* cyrillic */
-            @font-face {
-                font-family: 'Playfair Display';
-                font-style: normal;
-                font-weight: 400;
-                font-display: swap;
-                src: url(https://img1.wsimg.com/gfonts/s/playfairdisplay/v37/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2) format('woff2');
-                unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-            }
+    <script src="scripts.js"></script>
 </body>
 </html>
+
