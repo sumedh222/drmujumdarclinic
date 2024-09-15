@@ -7,3 +7,8 @@ document.getElementById('subscribeForm').addEventListener('submit', function(eve
     event.preventDefault();
     alert('Subscribed successfully.');
 });
+// Example of using AOS for scroll animations
+AOS.init({
+    duration: 1200,
+    easing: 'ease-in-out',
+});
