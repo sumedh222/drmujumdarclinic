@@ -124,3 +124,8 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* styles.css */
+body {
+    background-color: red;
+}
+
