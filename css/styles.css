@@ -1,80 +1,10 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    background-color: #f4f4f4;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Header Styling */
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Hero Section */
-.hero {
-    background: url('../images/clinic-hero.jpg') no-repeat center center/cover;
-    height: 400px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 3em;
-}
-
-/* Buttons */
-.cta-button {
-    background: #5cb85c;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Section Styling */
-section {
-    padding: 20px 0;
-}
-
-/* Footer Styling */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap');
 
 /* Reset and basic styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(to bottom right, #4facfe, #00f2fe);
     color: #333;
 }
@@ -84,6 +14,10 @@ header {
     background: #fff;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .header-container {
@@ -104,14 +38,40 @@ header nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #4facfe;
 }
 
 /* Section styles */
 .section {
-    padding: 60px 20px;
+    padding: 100px 20px;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
+/* Animations */
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-up {
+    animation: slideUp 2s ease-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Gallery styles */
 .gallery-images {
     display: flex;
     gap: 15px;
@@ -121,6 +81,11 @@ header nav ul li a {
 .gallery-images img {
     max-width: 200px;
     border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.1);
 }
 
 /* Subscribe form styles */
@@ -133,6 +98,7 @@ header nav ul li a {
 #subscribe-form input {
     padding: 10px;
     width: 300px;
+    font-size: 16px;
 }
 
 #subscribe-form button {
@@ -141,6 +107,11 @@ header nav ul li a {
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+#subscribe-form button:hover {
+    background: #4facfe;
 }
 
 /* Footer styles */
@@ -149,4 +120,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
