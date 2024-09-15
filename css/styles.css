@@ -129,3 +129,33 @@ body {
     background-color: red;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: linear-gradient(to right, #f7f7f7, #e0e0e0);
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
