@@ -129,3 +129,14 @@ body {
     background-color: red;
 }
 
+body {
+    background-color: #f0f8ff; /* Light blue background for the body */
+}
+
+button {
+    background-color: #3498db; /* Blue button */
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
