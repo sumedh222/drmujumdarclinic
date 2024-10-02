@@ -3,98 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Mujumdar Clinic</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr Mujumdar Clinic</title>
-    <!-- Other head elements like stylesheets -->
-
+    <title>Dr. H R Mujumdar Clinic</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Dr. Mujumdar Clinic</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Dr Mujumdar Clinic Online appointment Form</a></li>
-                    <li><a href="#booking">Book Appointment</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#subscribe">Subscribe</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Information about the clinic.</p>
-        </div>
-    </section>
-    <section id="services">
-        <div class="container">
-            <h2>Dr Mujumdar Clinic Online appointment Form</h2>
-            <p>WE PROVIDE A WIDE RANGE OF SERVICES.</p>
-            <p><b><i><u><h2> To Book An Online Appointment Please Click On this link</h2></u></i></b></p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfZ0aab-1jF1vU_fuuJ8VuK0NdhKYZPypjC2OyWLMSi1ZCgOg/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-    </section>
-    <section id="booking">
-        <div class="container">
-            <h2>Book an Appointment</h2>
-            <form id="bookingForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-                <label for="time">Time:</label>
-                <input type="time" id="time" name="time" required>
-                <button type="submit">Book Now</button>
-            </form>
-        </div>
-    </section>
-    <section id="testimonials">
-        <div class="container">
-            <h2>Testimonials</h2>
-            <p>Client testimonials go here.</p>
-        </div>
-    </section>
-    <section id="gallery">
-        <div class="container">
-            <h2>Gallery</h2>
-            <p>Images of the clinic and staff.</p>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Contact information and form.</p>
-        </div>
-    </section>
-    <section id="subscribe">
-        <div class="container">
-            <h2>Subscribe</h2>
-            <form id="subscribeForm">
-                <label for="emailSubscribe">Email:</label>
-                <input type="email" id="emailSubscribe" name="emailSubscribe" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Dr. Mujumdar Clinic. All rights reserved.</p>
-        </div>
-    </footer>
-    
-    <script src="script.js"></script>
 
+    <section id="home" class="intro-section">
+        <h1>Welcome to DR Mujumdar Clinic</h1>
+        <h2>DR. H R MUJUMDAR</h2>
+        <p>Since 2009</p>
+        <a class="btn" href="#appointment">To Book an Appointment, Click Here</a>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>Our Commitment to Excellence</h2>
+        <p>Dedicated to delivering superior healthcare services.</p>
+        <p><strong>History of Compassionate Care:</strong> Since our establishment, we have been committed to providing compassionate and personalized medical care to our patients.</p>
+        <p><strong>Mission to Serve the Community:</strong> Our mission is to improve the health and well-being of the community by offering accessible and high-quality healthcare services.</p>
+        <p><strong>Core Values of Integrity and Empathy:</strong> We uphold the highest standards of integrity and empathy in all interactions with our patients and their families.</p>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Comprehensive Medical Care</h2>
+        <ul>
+            <li>General Consulting and Routine Check-ups</li>
+            <li>Laboratory Services by Morya Clinical Laboratory</li>
+            <li>Medical Drugs and Cosmetics by Sindhu Medical Chemist and Drugist</li>
+        </ul>
+    </section>
+
+    <section id="appointment" class="appointment-section">
+        <h2>Book an Appointment</h2>
+        <a class="btn" href="your-booking-link-here">Click here to book an appointment</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DR Mujumdar Clinic. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
